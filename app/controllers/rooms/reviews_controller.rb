@@ -1,4 +1,4 @@
-class Room::ReviewsController < ApplicationController
+class Rooms::ReviewsController < ApplicationController
   before_filter :require_authentication
 
   def create
