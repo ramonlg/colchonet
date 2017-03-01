@@ -29,6 +29,10 @@ pt:
       destroy: 'Remover'
     review:
       login_to_review: 'Faça o login para avaliar os quartos'
+      stats:
+        zero: 'Não há avaliações'
+        one: '%{average}/%{max} (1 avaliação)'
+        other: '%{average}/%{max} (%{count} avaliações)'
     new:
       title: 'Cadastrar Quarto'
     edit:
@@ -38,6 +42,8 @@ pt:
       location: 'Localização:'
       description: 'Descrição:'
       edit: 'Editar'
+    review_form:
+      login_to_review: 'Faça o login para avaliar os quartos'
 
   signup:
     confirm_email:
