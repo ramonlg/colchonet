@@ -21,6 +21,7 @@
   padding: 0;
   float: right;
   border: none;
+  position: relative;
 }
 
 .review label {
@@ -31,4 +32,38 @@
   font-size: 0.8em;
   color: #666;
   font-variant: small-caps;
+}
+
+.review .star {
+  font-size: 18px;
+}
+
+.review .fa-star {
+  color: gold;
+  text-shadow: 1px 1px #999;
+}
+
+.review .fa-star-o {
+  color: #aaa;
+}
+
+.review .fa-check,
+.review .fa-times {
+  position: absolute;
+  right: 0;
+}
+
+.review label i.fa {
+  font-size: 18px;
+  text-shadow: 1px 1px #999;
+  cursor:pointer;
+  color: #ccc;
+}
+
+.review label.toggled i {
+  color: gold;
+}
+
+.review form > input {
+  display: none;
 }
