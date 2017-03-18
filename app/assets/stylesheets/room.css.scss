@@ -39,7 +39,7 @@
 }
 
 .review .fa-star {
-  color: gold;
+  color: gold !important;
   text-shadow: 1px 1px #999;
 }
 
@@ -65,5 +65,38 @@
 }
 
 .review form > input {
-  display: none;
+  display:none;
+}
+
+#content .search {
+  float: right;
+  margin: 0;
+  position: relative;
+  &:after {
+    padding: 5px;
+    font-size: 14px;
+    font-family: 'FontAwesome';
+    position: absolute;
+    content: "\f002";
+    color: #bbb;
+    top: 0;
+    right: 0;
+  }
+}
+
+mark {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  background-color: gold;
+}
+.room-description {
+  p, img {
+    float: left;
+    margin-right: 10px;
+  }
+}
+.room-description + ul {
+  padding-top: 10px;
+  clear: both;
 }

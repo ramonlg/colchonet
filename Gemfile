@@ -9,7 +9,9 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bcrypt', '~> 3.1.7'
-gem 'font-awesome-rails'
+gem 'font-awesome-rails', '4.0.3.2'
+gem 'friendly_id', '5.0.3'
+gem 'kaminari'
 
 group :development, :test do
   gem 'byebug'

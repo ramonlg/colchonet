@@ -23,6 +23,9 @@ pt:
   rooms:
     index:
       title: 'Quartos disponíveis'
+      search_results: 'Resultados da busca'
+    search:
+      search_for: 'Buscar por...'
     room:
       owner_html: '&mdash; %{owner} (%{when})'
       edit: 'Editar'
