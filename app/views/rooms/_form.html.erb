@@ -20,6 +20,11 @@
     <%= f.text_area :description %>
     <%= error_tag @room, :description %>
   </div>
+  <div>
+    <%= f.label :picture %><br>
+    <%= f.file_field :picture %>
+    <%= error_tag @room, :picture %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

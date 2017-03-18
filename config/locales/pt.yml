@@ -95,6 +95,7 @@ pt:
         description: 'Descrição'
         location: 'Localização'
         title: 'Titulo'
+        picture: 'Foto'
 
   activemodel:
     attributes:

@@ -7,6 +7,7 @@ class Room < ActiveRecord::Base
   validates_presence_of :title
   validates_presence_of :slug
 
+  mount_uploader :picture, PictureUploader
   friendly_id :title, use: [:slugged, :history]
 
   scope :most_recent, -> { order(created_at: :desc) }
@@ -17,9 +18,9 @@ class Room < ActiveRecord::Base
 
   def self.search(query)
     if query.present?
-      where(['location LIKE :query OR
-              title LIKE :query OR
-              description LIKE :query', query: "%#{query}%"])
+      where(['location ILIKE :query OR
+              title ILIKE :query OR
+              description ILIKE :query', query: "%#{query}%"])
     else
       all
     end
